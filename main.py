@@ -62,6 +62,6 @@ def predict(data: StudentData):
         'Grouped_country'           :country_group 
     }])
 
-    prediction = model.preddict(input_row)[0]
+    prediction = model.predict(input_row)[0]
 
     return PredictionResponse(predicted_mental_health_score=round(float(prediction),2))
